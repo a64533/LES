@@ -1,0 +1,404 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>LES</Name>
+    <RootNamespace>LES</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>unittest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ad693e47-5ab5-4997-b3d2-6da4147f7185</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>LES.settings</DjangoSettingsModule>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="inscription\admin.py" />
+    <Compile Include="inscription\apps.py" />
+    <Compile Include="inscription\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inscription\migrations\__init__.py" />
+    <Compile Include="inscription\models.py" />
+    <Compile Include="inscription\tests.py" />
+    <Compile Include="inscription\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inscription\views.py" />
+    <Compile Include="inscription\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="LES\__init__.py" />
+    <Compile Include="LES\settings.py" />
+    <Compile Include="LES\urls.py" />
+    <Compile Include="LES\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="inscription\static\.DS_Store" />
+    <Content Include="inscription\static\css\animated-arrows.css" />
+    <Content Include="inscription\static\css\buefy.css" />
+    <Content Include="inscription\static\css\buefy.css.map" />
+    <Content Include="inscription\static\css\bulma.css" />
+    <Content Include="inscription\static\css\bulma.css.map" />
+    <Content Include="inscription\static\css\Chart.min.css" />
+    <Content Include="inscription\static\css\materialdesignicons.min.css" />
+    <Content Include="inscription\static\css\materialdesignicons.min.css.map" />
+    <Content Include="inscription\static\css\mystyle.css" />
+    <Content Include="inscription\static\css\notificacoes.css" />
+    <Content Include="inscription\static\css\responsive-tables.css" />
+    <Content Include="inscription\static\css\style.css" />
+    <Content Include="inscription\static\fonts\fontawesome-webfont.eot" />
+    <Content Include="inscription\static\fonts\fontawesome-webfont.svg" />
+    <Content Include="inscription\static\fonts\fontawesome-webfont.ttf" />
+    <Content Include="inscription\static\fonts\fontawesome-webfont.woff" />
+    <Content Include="inscription\static\fonts\fontawesome-webfont.woff2" />
+    <Content Include="inscription\static\fonts\FontAwesome.otf" />
+    <Content Include="inscription\static\fonts\Linearicons-Free.eot" />
+    <Content Include="inscription\static\fonts\Linearicons-Free.svg" />
+    <Content Include="inscription\static\fonts\Linearicons-Free.ttf" />
+    <Content Include="inscription\static\fonts\Linearicons-Free.woff" />
+    <Content Include="inscription\static\fonts\Linearicons-Free.woff2" />
+    <Content Include="inscription\static\fonts\materialdesignicons-webfont.eot" />
+    <Content Include="inscription\static\fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="inscription\static\fonts\materialdesignicons-webfont.woff" />
+    <Content Include="inscription\static\fonts\materialdesignicons-webfont.woff2" />
+    <Content Include="inscription\static\img\favicon.ico" />
+    <Content Include="inscription\static\img\hero-background.jpg" />
+    <Content Include="inscription\static\img\logo-large.png" />
+    <Content Include="inscription\static\img\logo-navbar.png" />
+    <Content Include="inscription\static\img\logo.png" />
+    <Content Include="inscription\static\img\play-btn.png" />
+    <Content Include="inscription\static\img\ualg-logo.png" />
+    <Content Include="inscription\static\img\user.png" />
+    <Content Include="inscription\static\img\vue-logo.png" />
+    <Content Include="inscription\static\js\animated-arrows.js" />
+    <Content Include="inscription\static\js\app.841e44b5.js" />
+    <Content Include="inscription\static\js\axios.js" />
+    <Content Include="inscription\static\js\buefy\components\autocomplete\index.js" />
+    <Content Include="inscription\static\js\buefy\components\autocomplete\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\button\index.js" />
+    <Content Include="inscription\static\js\buefy\components\button\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\carousel\index.js" />
+    <Content Include="inscription\static\js\buefy\components\carousel\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\checkbox\index.js" />
+    <Content Include="inscription\static\js\buefy\components\checkbox\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\clockpicker\index.js" />
+    <Content Include="inscription\static\js\buefy\components\clockpicker\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\collapse\index.js" />
+    <Content Include="inscription\static\js\buefy\components\collapse\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\datepicker\index.js" />
+    <Content Include="inscription\static\js\buefy\components\datepicker\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\datetimepicker\index.js" />
+    <Content Include="inscription\static\js\buefy\components\datetimepicker\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\dialog\index.js" />
+    <Content Include="inscription\static\js\buefy\components\dialog\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\dropdown\index.js" />
+    <Content Include="inscription\static\js\buefy\components\dropdown\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\field\index.js" />
+    <Content Include="inscription\static\js\buefy\components\field\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\icon\index.js" />
+    <Content Include="inscription\static\js\buefy\components\icon\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\input\index.js" />
+    <Content Include="inscription\static\js\buefy\components\input\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\loading\index.js" />
+    <Content Include="inscription\static\js\buefy\components\loading\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\menu\index.js" />
+    <Content Include="inscription\static\js\buefy\components\menu\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\message\index.js" />
+    <Content Include="inscription\static\js\buefy\components\message\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\modal\index.js" />
+    <Content Include="inscription\static\js\buefy\components\modal\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\navbar\index.js" />
+    <Content Include="inscription\static\js\buefy\components\navbar\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\notification\index.js" />
+    <Content Include="inscription\static\js\buefy\components\notification\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\numberinput\index.js" />
+    <Content Include="inscription\static\js\buefy\components\numberinput\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\pagination\index.js" />
+    <Content Include="inscription\static\js\buefy\components\pagination\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\progress\index.js" />
+    <Content Include="inscription\static\js\buefy\components\progress\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\radio\index.js" />
+    <Content Include="inscription\static\js\buefy\components\radio\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\rate\index.js" />
+    <Content Include="inscription\static\js\buefy\components\rate\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\select\index.js" />
+    <Content Include="inscription\static\js\buefy\components\select\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\sidebar\index.js" />
+    <Content Include="inscription\static\js\buefy\components\sidebar\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\skeleton\index.js" />
+    <Content Include="inscription\static\js\buefy\components\skeleton\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\slider\index.js" />
+    <Content Include="inscription\static\js\buefy\components\slider\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\snackbar\index.js" />
+    <Content Include="inscription\static\js\buefy\components\snackbar\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\steps\index.js" />
+    <Content Include="inscription\static\js\buefy\components\steps\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\switch\index.js" />
+    <Content Include="inscription\static\js\buefy\components\switch\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\table\index.js" />
+    <Content Include="inscription\static\js\buefy\components\table\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\tabs\index.js" />
+    <Content Include="inscription\static\js\buefy\components\tabs\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\taginput\index.js" />
+    <Content Include="inscription\static\js\buefy\components\taginput\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\tag\index.js" />
+    <Content Include="inscription\static\js\buefy\components\tag\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\timepicker\index.js" />
+    <Content Include="inscription\static\js\buefy\components\timepicker\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\toast\index.js" />
+    <Content Include="inscription\static\js\buefy\components\toast\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\tooltip\index.js" />
+    <Content Include="inscription\static\js\buefy\components\tooltip\index.min.js" />
+    <Content Include="inscription\static\js\buefy\components\upload\index.js" />
+    <Content Include="inscription\static\js\buefy\components\upload\index.min.js" />
+    <Content Include="inscription\static\js\Chart.min.js" />
+    <Content Include="inscription\static\js\encoding.js" />
+    <Content Include="inscription\static\js\fontawesome.js" />
+    <Content Include="inscription\static\js\jquery-3.4.1.min.js" />
+    <Content Include="inscription\static\js\js_custom.js" />
+    <Content Include="inscription\static\js\moment.js" />
+    <Content Include="inscription\static\js\notificacoes.js" />
+    <Content Include="inscription\static\js\vue-dev.js" />
+    <Content Include="inscription\static\js\vue.js" />
+    <Content Include="inscription\static\scss\bootstrap.scss" />
+    <Content Include="inscription\static\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="inscription\static\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="inscription\static\scss\bootstrap\bootstrap.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_navbar-align.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="inscription\static\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="inscription\static\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_alert.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_badge.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_button-group.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_buttons.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_card.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_carousel.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_close.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_code.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_dropdown.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_forms.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_functions.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_grid.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_images.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_input-group.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_list-group.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_media.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_mixins.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_modal.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_nav.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_navbar.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_pagination.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_popover.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_print.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_progress.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_reboot.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_root.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_tables.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_tooltip.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_transitions.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_type.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_utilities.scss" />
+    <Content Include="inscription\static\scss\bootstrap\_variables.scss" />
+    <Content Include="inscription\static\scss\main.scss" />
+    <Content Include="inscription\static\scss\theme\_elements.scss" />
+    <Content Include="inscription\static\scss\theme\_flexbox.scss" />
+    <Content Include="inscription\static\scss\theme\_footer.scss" />
+    <Content Include="inscription\static\scss\theme\_header.scss" />
+    <Content Include="inscription\static\scss\theme\_home.scss" />
+    <Content Include="inscription\static\scss\theme\_mixins.scss" />
+    <Content Include="inscription\static\scss\theme\_pages.scss" />
+    <Content Include="inscription\static\scss\theme\_reset.scss" />
+    <Content Include="inscription\static\scss\theme\_variables.scss" />
+    <Content Include="inscription\templates\app.html" />
+    <Content Include="inscription\templates\bulma_table.html" />
+    <Content Include="inscription\templates\bulma_table_details.html" />
+    <Content Include="inscription\templates\inicio.html" />
+    <Content Include="inscription\templates\inscription\all_events.html" />
+    <Content Include="inscription\templates\inscription\event_page.html" />
+    <Content Include="inscription\templates\inscription\inscription_form.html" />
+    <Content Include="inscription\templates\inscription\message.html" />
+    <Content Include="inscription\templates\mensagem.html" />
+    <Content Include="inscription\templates\navbar.html" />
+    <Content Include="inscription\templates\popup.html" />
+    <Content Include="inscription\templates\registration\password_reset_complete.html" />
+    <Content Include="inscription\templates\registration\password_reset_confirm.html" />
+    <Content Include="inscription\templates\registration\password_reset_done.html" />
+    <Content Include="inscription\templates\registration\password_reset_email.html" />
+    <Content Include="inscription\templates\registration\password_reset_form.html" />
+    <Content Include="inscription\templates\registration\password_reset_subject.txt" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="inscription\" />
+    <Folder Include="inscription\migrations\" />
+    <Folder Include="inscription\static\" />
+    <Folder Include="inscription\static\css\" />
+    <Folder Include="inscription\static\fonts\" />
+    <Folder Include="inscription\static\img\" />
+    <Folder Include="inscription\static\js\" />
+    <Folder Include="inscription\static\js\buefy\" />
+    <Folder Include="inscription\static\js\buefy\components\" />
+    <Folder Include="inscription\static\js\buefy\components\autocomplete\" />
+    <Folder Include="inscription\static\js\buefy\components\button\" />
+    <Folder Include="inscription\static\js\buefy\components\carousel\" />
+    <Folder Include="inscription\static\js\buefy\components\checkbox\" />
+    <Folder Include="inscription\static\js\buefy\components\clockpicker\" />
+    <Folder Include="inscription\static\js\buefy\components\collapse\" />
+    <Folder Include="inscription\static\js\buefy\components\datepicker\" />
+    <Folder Include="inscription\static\js\buefy\components\datetimepicker\" />
+    <Folder Include="inscription\static\js\buefy\components\dialog\" />
+    <Folder Include="inscription\static\js\buefy\components\dropdown\" />
+    <Folder Include="inscription\static\js\buefy\components\field\" />
+    <Folder Include="inscription\static\js\buefy\components\icon\" />
+    <Folder Include="inscription\static\js\buefy\components\input\" />
+    <Folder Include="inscription\static\js\buefy\components\loading\" />
+    <Folder Include="inscription\static\js\buefy\components\menu\" />
+    <Folder Include="inscription\static\js\buefy\components\message\" />
+    <Folder Include="inscription\static\js\buefy\components\modal\" />
+    <Folder Include="inscription\static\js\buefy\components\navbar\" />
+    <Folder Include="inscription\static\js\buefy\components\notification\" />
+    <Folder Include="inscription\static\js\buefy\components\numberinput\" />
+    <Folder Include="inscription\static\js\buefy\components\pagination\" />
+    <Folder Include="inscription\static\js\buefy\components\progress\" />
+    <Folder Include="inscription\static\js\buefy\components\radio\" />
+    <Folder Include="inscription\static\js\buefy\components\rate\" />
+    <Folder Include="inscription\static\js\buefy\components\select\" />
+    <Folder Include="inscription\static\js\buefy\components\sidebar\" />
+    <Folder Include="inscription\static\js\buefy\components\skeleton\" />
+    <Folder Include="inscription\static\js\buefy\components\slider\" />
+    <Folder Include="inscription\static\js\buefy\components\snackbar\" />
+    <Folder Include="inscription\static\js\buefy\components\steps\" />
+    <Folder Include="inscription\static\js\buefy\components\switch\" />
+    <Folder Include="inscription\static\js\buefy\components\table\" />
+    <Folder Include="inscription\static\js\buefy\components\tabs\" />
+    <Folder Include="inscription\static\js\buefy\components\taginput\" />
+    <Folder Include="inscription\static\js\buefy\components\tag\" />
+    <Folder Include="inscription\static\js\buefy\components\timepicker\" />
+    <Folder Include="inscription\static\js\buefy\components\toast\" />
+    <Folder Include="inscription\static\js\buefy\components\tooltip\" />
+    <Folder Include="inscription\static\js\buefy\components\upload\" />
+    <Folder Include="inscription\static\scss\" />
+    <Folder Include="inscription\static\scss\bootstrap\" />
+    <Folder Include="inscription\static\scss\bootstrap\mixins\" />
+    <Folder Include="inscription\static\scss\bootstrap\utilities\" />
+    <Folder Include="inscription\static\scss\theme\" />
+    <Folder Include="inscription\templates\" />
+    <Folder Include="inscription\templates\inscription\" />
+    <Folder Include="inscription\templates\registration\" />
+    <Folder Include="LES\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.9</Version>
+      <Description>env (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

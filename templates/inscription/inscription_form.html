@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  
+<form action={% url 'inscription:inscription_action' event_id %} method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button id="SomeButton">Submit</button>
+</form>
+</body>
+</html>

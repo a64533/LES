@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Message</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <br><br><br><br><br>
+
+    <!-- SHOW MESSAGE -->
+
+    <a href={% url 'inscription:all_events' %} style="text-decoration: none; color: black;"><div class="container shadow" style ="background-color: #f2f2f2;">
+      <br>
+      <h2 style="text-align: center">{{ MESSAGE }}</h2>
+      <br>
+    </div></a>
+
+    <!-- END MESSAGE -->
+
+    <br><br><br><br>
+
+  </body>
+</html>
